@@ -131,9 +131,9 @@ if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
 			//]]></script>
 			<% end %>
 
-<%+footer%>
-<%
-luci.sys.exec("(curl -k -L \"$(curl -s https://instant.unsplash.com | grep -o 'src=.*w=1080' | grep -o 'https://.*' | sed 's/amp;//g')\" -o /www/luci-static/edge/background/1.jpg) &")
-luci.sys.exec("(curl -k -L \"$(curl -s https://instant.unsplash.com | grep -o 'src=.*w=1080' | grep -o 'https://.*' | sed 's/amp;//g')\" -o /www/luci-static/edge/background/2.jpg) &")
-luci.sys.exec("(curl -k -L \"$(curl -s https://instant.unsplash.com | grep -o 'src=.*w=1080' | grep -o 'https://.*' | sed 's/amp;//g')\" -o /www/luci-static/edge/background/3.jpg) &")
-%>
+#<%+footer%>
+#<%
+#luci.sys.exec("(curl -k -L \"$(curl -s https://instant.unsplash.com | grep -o 'src=.*w=1080' | grep -o 'https://.*' | sed 's/amp;//g')\" -o /www/luci-static/edge/background/1.jpg) &")
+#luci.sys.exec("(curl -k -L \"$(curl -s https://instant.unsplash.com | grep -o 'src=.*w=1080' | grep -o 'https://.*' | sed 's/amp;//g')\" -o /www/luci-static/edge/background/2.jpg) &")
+#luci.sys.exec("(curl -k -L \"$(curl -s https://instant.unsplash.com | grep -o 'src=.*w=1080' | grep -o 'https://.*' | sed 's/amp;//g')\" -o /www/luci-static/edge/background/3.jpg) &")
+#%>
